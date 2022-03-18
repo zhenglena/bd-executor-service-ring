@@ -84,15 +84,6 @@ Be ready to answer these questions with the class:
    1. What service clients does it need access to?
 1. What method will the *user* call to update their devices?
    1. Which version does the firmware get updated to?
-   
-**Hey, what's up with the models for the services?**
-
-Well spotted! To provide you with more concrete examples of Coral
-modeling, the dependency service's were originally generated from XML.
-That XML source is in the `model/` directory, while the generated code
-is in `com.amazon.ata.executorservice.coralgenerated`.
-You won't need to update either the models or generated code,
-but we hope they will be a good reference and extra practice with Coral.
 
 Phase 0 is complete when:
 - You have found the classes mentioned above and can answer the

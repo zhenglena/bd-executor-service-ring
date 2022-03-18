@@ -20,7 +20,7 @@ public class Phase1Test {
     void deviceCheckTask_implementsFunctionalInterface() {
         // GIVEN
         String[] methods = {"run"};
-        DeviceCheckTask task = new DeviceCheckTask(new DeviceChecker(null, null));
+        DeviceCheckTask task = buildDeviceCheckTask();
         // WHEN
 
         // THEN
@@ -86,5 +86,23 @@ public class Phase1Test {
 
         // THEN
         verify(deviceCheckerSpy).updateDevice(deviceId, bleedingEdgeVersion);
+    }
+
+    private int buildDeviceCheckAttempt = 0;
+
+    private DeviceCheckTask buildDeviceCheckTask() {
+        DeviceCheckTask task = null;
+        try {
+            if (buildDeviceCheckAttempt == 0) {
+                task = (DeviceCheckTask) DeviceCheckTask.class.getConstructors()[0].newInstance(new DeviceChecker(null, null), null, null);
+            } else {
+                task = (DeviceCheckTask) DeviceCheckTask.class.getConstructors()[0].newInstance(new DeviceChecker(null, null));
+            }
+        } catch (Exception e) {
+            buildDeviceCheckAttempt++;
+            task = buildDeviceCheckTask();
+        }
+        assertNotNull(task);
+        return task;
     }
 }

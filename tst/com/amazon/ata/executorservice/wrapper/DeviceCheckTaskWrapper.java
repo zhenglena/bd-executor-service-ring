@@ -44,7 +44,7 @@ public class DeviceCheckTaskWrapper extends WrapperBase {
     public void run() {
         Method runMethod = getMethod("run");
         try {
-            runMethod.invoke(null);
+            runMethod.invoke(getWrappedInstance());
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
