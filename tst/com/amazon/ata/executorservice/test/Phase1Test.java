@@ -1,19 +1,17 @@
-package com.amazon.ata.executorservice.classroom.test;
+package com.amazon.ata.executorservice.test;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.GetDeviceSystemInfoRequest;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
-import com.amazon.ata.executorservice.classroom.test.wrapper.DeviceCheckTaskWrapper;
-import com.amazon.ata.executorservice.classroom.checker.DeviceCheckTask;
-import com.amazon.ata.executorservice.classroom.checker.DeviceChecker;
-import com.amazon.ata.executorservice.classroom.customer.CustomerService;
-import com.amazon.ata.executorservice.classroom.devicecommunication.RingDeviceCommunicatorService;
-import com.amazon.ata.executorservice.classroom.util.KnownRingDeviceFirmwareVersions;
-import com.amazon.ata.test.assertions.IntrospectionAssertions;
-
+import com.amazon.ata.executorservice.checker.DeviceCheckTask;
+import com.amazon.ata.executorservice.checker.DeviceChecker;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.GetDeviceSystemInfoRequest;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
+import com.amazon.ata.executorservice.customer.CustomerService;
+import com.amazon.ata.executorservice.devicecommunication.RingDeviceCommunicatorService;
+import com.amazon.ata.executorservice.util.KnownRingDeviceFirmwareVersions;
+import com.amazon.ata.executorservice.wrapper.DeviceCheckTaskWrapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
@@ -22,11 +20,18 @@ public class Phase1Test {
     void deviceCheckTask_implementsFunctionalInterface() {
         // GIVEN
         String[] methods = {"run"};
+        DeviceCheckTask task = new DeviceCheckTask(new DeviceChecker(null, null));
         // WHEN
 
         // THEN
-        IntrospectionAssertions.assertImplementsInterface(DeviceCheckTask.class, Runnable.class);
-        IntrospectionAssertions.assertClassContainsMemberMethodNames(DeviceCheckTask.class, methods);
+        assertTrue(Runnable.class.isInstance(task));
+        try {
+            for (String method : methods) {
+                DeviceCheckTask.class.getMethod(method);
+            }
+        } catch (NoSuchMethodException e) {
+            fail(e.getMessage());
+        }
     }
 
     @Test

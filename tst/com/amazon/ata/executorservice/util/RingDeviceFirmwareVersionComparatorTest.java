@@ -1,6 +1,6 @@
-package com.amazon.ata.executorservice.classroom.util;
+package com.amazon.ata.executorservice.util;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;

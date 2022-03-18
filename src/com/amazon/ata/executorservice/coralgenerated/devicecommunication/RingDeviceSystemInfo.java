@@ -1,21 +1,15 @@
-package com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication;
+package com.amazon.ata.executorservice.coralgenerated.devicecommunication;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
 
-import com.amazon.coral.annotation.Shape;
-import com.amazon.coral.annotation.Wrapper;
-import com.amazon.coral.annotation.XmlName;
-import com.amazon.coral.annotation.XmlNamespace;
-import com.amazon.coral.annotation.*;
+
+
+
+
+
 import java.util.Arrays;
 import java.util.Objects;
 
-@Shape
-  @XmlName(value="RingDeviceSystemInfo")
-  @XmlNamespace(value="http://internal.amazon.com/coral/com.amazon.ata.executorservice.classroom.devicecommunication/")
-  @Wrapper(value={com.amazon.coral.annotation.WrapperType.INPUT,com.amazon.coral.annotation.WrapperType.OUTPUT})
-@com.amazon.coral.annotation.Generated
-@com.amazon.coral.annotation.CoralSuppressWarnings
 public class RingDeviceSystemInfo extends Object  {
 
   /**
@@ -28,7 +22,7 @@ public class RingDeviceSystemInfo extends Object  {
   /**
    * Fluent builder for instances of RingDeviceSystemInfo.
    */
-  @com.amazon.coral.annotation.Generated
+  
   public static class Builder {
 
     protected String deviceId;
@@ -102,7 +96,7 @@ public class RingDeviceSystemInfo extends Object  {
   }
 
   private static final int classNameHashCode =
-      internalHashCodeCompute("com.amazon.ata.executorservice.classroom.devicecommunication.RingDeviceSystemInfo");
+      internalHashCodeCompute("com.amazon.ata.executorservice.devicecommunication.RingDeviceSystemInfo");
 
   /**
    * HashCode implementation for RingDeviceSystemInfo

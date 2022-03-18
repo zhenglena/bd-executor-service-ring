@@ -1,6 +1,6 @@
-package com.amazon.ata.executorservice.classroom.checker;
+package com.amazon.ata.executorservice.checker;
 
-import com.amazon.ata.executorservice.classroom.devicecommunication.RingDeviceCommunicatorService;
+import com.amazon.ata.executorservice.devicecommunication.RingDeviceCommunicatorService;
 
 /**
  * A task to check a single device's version against a desired latest

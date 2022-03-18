@@ -1,7 +1,7 @@
-package com.amazon.ata.executorservice.classroom.customer;
+package com.amazon.ata.executorservice.customer;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.customer.GetCustomerDevicesRequest;
-import com.amazon.ata.executorservice.classroom.coralgenerated.customer.GetCustomerDevicesResponse;
+import com.amazon.ata.executorservice.coralgenerated.customer.GetCustomerDevicesRequest;
+import com.amazon.ata.executorservice.coralgenerated.customer.GetCustomerDevicesResponse;
 
 import java.util.ArrayList;
 import java.util.List;

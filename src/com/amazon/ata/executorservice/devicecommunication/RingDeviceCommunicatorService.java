@@ -1,12 +1,12 @@
-package com.amazon.ata.executorservice.classroom.devicecommunication;
+package com.amazon.ata.executorservice.devicecommunication;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.GetDeviceSystemInfoRequest;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.GetDeviceSystemInfoResponse;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.RingDeviceSystemInfo;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.UpdateDeviceFirmwareRequest;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.UpdateDeviceFirmwareResponse;
-import com.amazon.ata.executorservice.classroom.util.KnownRingDeviceFirmwareVersions;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.GetDeviceSystemInfoRequest;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.GetDeviceSystemInfoResponse;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.RingDeviceSystemInfo;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.UpdateDeviceFirmwareRequest;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.UpdateDeviceFirmwareResponse;
+import com.amazon.ata.executorservice.util.KnownRingDeviceFirmwareVersions;
 
 import com.google.common.collect.ImmutableMap;
 

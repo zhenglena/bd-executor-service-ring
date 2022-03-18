@@ -1,12 +1,12 @@
-package com.amazon.ata.executorservice.classroom.test;
+package com.amazon.ata.executorservice.test;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.customer.GetCustomerDevicesRequest;
-import com.amazon.ata.executorservice.classroom.coralgenerated.customer.GetCustomerDevicesResponse;
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.GetDeviceSystemInfoRequest;
-import com.amazon.ata.executorservice.classroom.checker.DeviceChecker;
-import com.amazon.ata.executorservice.classroom.customer.CustomerService;
-import com.amazon.ata.executorservice.classroom.devicecommunication.RingDeviceCommunicatorService;
-import com.amazon.ata.executorservice.classroom.util.KnownRingDeviceFirmwareVersions;
+import com.amazon.ata.executorservice.coralgenerated.customer.GetCustomerDevicesRequest;
+import com.amazon.ata.executorservice.coralgenerated.customer.GetCustomerDevicesResponse;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.GetDeviceSystemInfoRequest;
+import com.amazon.ata.executorservice.checker.DeviceChecker;
+import com.amazon.ata.executorservice.customer.CustomerService;
+import com.amazon.ata.executorservice.devicecommunication.RingDeviceCommunicatorService;
+import com.amazon.ata.executorservice.util.KnownRingDeviceFirmwareVersions;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.BeforeEach;

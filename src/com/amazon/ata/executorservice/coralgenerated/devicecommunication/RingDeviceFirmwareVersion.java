@@ -1,20 +1,9 @@
-package com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication;
+package com.amazon.ata.executorservice.coralgenerated.devicecommunication;
 
-import com.amazon.coral.annotation.Shape;
-import com.amazon.coral.annotation.Wrapper;
-import com.amazon.coral.annotation.XmlName;
-import com.amazon.coral.annotation.XmlNamespace;
-import com.amazon.coral.annotation.*;
 import java.util.Arrays;
 import java.util.Objects;
 
-@Shape
-  @XmlName(value="RingDeviceFirmwareVersion")
-  @XmlNamespace(value="http://internal.amazon.com/coral/com.amazon.ata.executorservice.classroom.devicecommunication/")
-  @Wrapper(value={com.amazon.coral.annotation.WrapperType.INPUT,com.amazon.coral.annotation.WrapperType.OUTPUT})
-@com.amazon.coral.annotation.Generated
-@com.amazon.coral.annotation.CoralSuppressWarnings
-public class RingDeviceFirmwareVersion extends Object  {
+public class RingDeviceFirmwareVersion {
 
   /**
    * Statically creates a builder instance for RingDeviceFirmwareVersion.
@@ -26,7 +15,6 @@ public class RingDeviceFirmwareVersion extends Object  {
   /**
    * Fluent builder for instances of RingDeviceFirmwareVersion.
    */
-  @com.amazon.coral.annotation.Generated
   public static class Builder {
 
     protected String versionNumber;
@@ -77,7 +65,7 @@ public class RingDeviceFirmwareVersion extends Object  {
   }
 
   private static final int classNameHashCode =
-      internalHashCodeCompute("com.amazon.ata.executorservice.classroom.devicecommunication.RingDeviceFirmwareVersion");
+      internalHashCodeCompute("com.amazon.ata.executorservice.devicecommunication.RingDeviceFirmwareVersion");
 
   /**
    * HashCode implementation for RingDeviceFirmwareVersion

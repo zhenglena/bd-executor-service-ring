@@ -1,8 +1,8 @@
-package com.amazon.ata.executorservice.classroom.checker;
+package com.amazon.ata.executorservice.checker;
 
-import com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
-import com.amazon.ata.executorservice.classroom.customer.CustomerService;
-import com.amazon.ata.executorservice.classroom.devicecommunication.RingDeviceCommunicatorService;
+import com.amazon.ata.executorservice.coralgenerated.devicecommunication.RingDeviceFirmwareVersion;
+import com.amazon.ata.executorservice.customer.CustomerService;
+import com.amazon.ata.executorservice.devicecommunication.RingDeviceCommunicatorService;
 
 /**
  * Utility object for checking version status of devices, and updating

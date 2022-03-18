@@ -1,13 +1,6 @@
-## ExecutorServices: Ring Device Updates Check 
-**branch name:** executorservice-classroom
+## ExecutorServices: Ring Device Updates Check
 
 No AWS resources are required for this activity
-
-**RDE workflows:**
-- executorservice-classroom-phase1
-- executorservice-classroom-phase2
-- executorservice-classroom-phase3
-- executorservice-classroom-phase4
 
 ### Introduction
 
@@ -79,7 +72,7 @@ get a sense for what they do.
 
 #### Try building
 
-Run the `executorservice-classroom-phase1` RDE workflow and make
+Run the `Phase1Test` file and make
 sure the code builds but tests fail.
 
 **GOAL:** Become familiar with the code and makes sure that it builds

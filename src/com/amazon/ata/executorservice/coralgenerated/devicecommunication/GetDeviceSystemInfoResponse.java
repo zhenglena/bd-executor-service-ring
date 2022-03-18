@@ -1,20 +1,9 @@
-package com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication;
+package com.amazon.ata.executorservice.coralgenerated.devicecommunication;
 
-import com.amazon.coral.annotation.Shape;
-import com.amazon.coral.annotation.Wrapper;
-import com.amazon.coral.annotation.XmlName;
-import com.amazon.coral.annotation.XmlNamespace;
-import com.amazon.coral.annotation.*;
 import java.util.Arrays;
 import java.util.Objects;
 
-@Shape
-  @XmlName(value="GetDeviceSystemInfoResponse")
-  @XmlNamespace(value="http://internal.amazon.com/coral/com.amazon.ata.executorservice.classroom.devicecommunication/")
-  @Wrapper(value={com.amazon.coral.annotation.WrapperType.INPUT,com.amazon.coral.annotation.WrapperType.OUTPUT})
-@com.amazon.coral.annotation.Generated
-@com.amazon.coral.annotation.CoralSuppressWarnings
-public class GetDeviceSystemInfoResponse extends Object  {
+public class GetDeviceSystemInfoResponse {
 
   /**
    * Statically creates a builder instance for GetDeviceSystemInfoResponse.
@@ -26,7 +15,6 @@ public class GetDeviceSystemInfoResponse extends Object  {
   /**
    * Fluent builder for instances of GetDeviceSystemInfoResponse.
    */
-  @com.amazon.coral.annotation.Generated
   public static class Builder {
 
     protected RingDeviceSystemInfo systemInfo;
@@ -77,7 +65,7 @@ public class GetDeviceSystemInfoResponse extends Object  {
   }
 
   private static final int classNameHashCode =
-      internalHashCodeCompute("com.amazon.ata.executorservice.classroom.devicecommunication.GetDeviceSystemInfoResponse");
+      internalHashCodeCompute("com.amazon.ata.executorservice.devicecommunication.GetDeviceSystemInfoResponse");
 
   /**
    * HashCode implementation for GetDeviceSystemInfoResponse

@@ -1,21 +1,9 @@
-package com.amazon.ata.executorservice.classroom.coralgenerated.customer;
+package com.amazon.ata.executorservice.coralgenerated.customer;
 
-import com.amazon.coral.annotation.HttpLabel;
-import com.amazon.coral.annotation.Required;
-import com.amazon.coral.annotation.Shape;
-import com.amazon.coral.annotation.Wrapper;
-import com.amazon.coral.annotation.XmlName;
-import com.amazon.coral.annotation.XmlNamespace;
-import com.amazon.coral.annotation.*;
 import java.util.Arrays;
 import java.util.Objects;
 
-@Shape
-  @XmlName(value="GetCustomerDevicesRequest")
-  @XmlNamespace(value="http://internal.amazon.com/coral/com.amazon.ata.executorservice.classroom.customer/")
-  @Wrapper(value={com.amazon.coral.annotation.WrapperType.INPUT,com.amazon.coral.annotation.WrapperType.OUTPUT})
-@com.amazon.coral.annotation.Generated
-@com.amazon.coral.annotation.CoralSuppressWarnings
+
 public class GetCustomerDevicesRequest extends Object  {
 
   /**
@@ -28,7 +16,6 @@ public class GetCustomerDevicesRequest extends Object  {
   /**
    * Fluent builder for instances of GetCustomerDevicesRequest.
    */
-  @com.amazon.coral.annotation.Generated
   public static class Builder {
 
     protected String customerId;
@@ -70,8 +57,6 @@ public class GetCustomerDevicesRequest extends Object  {
 
   private String customerId;
 
-  @HttpLabel(value="customerId")
-  @Required()
   public String getCustomerId() {
     return this.customerId;
   }
@@ -81,7 +66,7 @@ public class GetCustomerDevicesRequest extends Object  {
   }
 
   private static final int classNameHashCode =
-      internalHashCodeCompute("com.amazon.ata.executorservice.classroom.customer.GetCustomerDevicesRequest");
+      internalHashCodeCompute("com.amazon.ata.executorservice.customer.GetCustomerDevicesRequest");
 
   /**
    * HashCode implementation for GetCustomerDevicesRequest

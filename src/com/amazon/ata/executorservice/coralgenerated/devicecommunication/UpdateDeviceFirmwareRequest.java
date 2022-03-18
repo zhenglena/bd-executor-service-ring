@@ -1,21 +1,8 @@
-package com.amazon.ata.executorservice.classroom.coralgenerated.devicecommunication;
+package com.amazon.ata.executorservice.coralgenerated.devicecommunication;
 
-import com.amazon.coral.annotation.HttpLabel;
-import com.amazon.coral.annotation.Required;
-import com.amazon.coral.annotation.Shape;
-import com.amazon.coral.annotation.Wrapper;
-import com.amazon.coral.annotation.XmlName;
-import com.amazon.coral.annotation.XmlNamespace;
-import com.amazon.coral.annotation.*;
 import java.util.Arrays;
 import java.util.Objects;
 
-@Shape
-  @XmlName(value="UpdateDeviceFirmwareRequest")
-  @XmlNamespace(value="http://internal.amazon.com/coral/com.amazon.ata.executorservice.classroom.devicecommunication/")
-  @Wrapper(value={com.amazon.coral.annotation.WrapperType.INPUT,com.amazon.coral.annotation.WrapperType.OUTPUT})
-@com.amazon.coral.annotation.Generated
-@com.amazon.coral.annotation.CoralSuppressWarnings
 public class UpdateDeviceFirmwareRequest extends Object  {
 
   /**
@@ -28,7 +15,7 @@ public class UpdateDeviceFirmwareRequest extends Object  {
   /**
    * Fluent builder for instances of UpdateDeviceFirmwareRequest.
    */
-  @com.amazon.coral.annotation.Generated
+  
   public static class Builder {
 
     protected String deviceId;
@@ -85,8 +72,6 @@ public class UpdateDeviceFirmwareRequest extends Object  {
   private String deviceId;
   private RingDeviceFirmwareVersion version;
 
-  @HttpLabel(value="deviceId")
-  @Required()
   public String getDeviceId() {
     return this.deviceId;
   }
@@ -95,7 +80,6 @@ public class UpdateDeviceFirmwareRequest extends Object  {
     this.deviceId = deviceId;
   }
 
-  @Required()
   public RingDeviceFirmwareVersion getVersion() {
     return this.version;
   }
@@ -105,7 +89,7 @@ public class UpdateDeviceFirmwareRequest extends Object  {
   }
 
   private static final int classNameHashCode =
-      internalHashCodeCompute("com.amazon.ata.executorservice.classroom.devicecommunication.UpdateDeviceFirmwareRequest");
+      internalHashCodeCompute("com.amazon.ata.executorservice.devicecommunication.UpdateDeviceFirmwareRequest");
 
   /**
    * HashCode implementation for UpdateDeviceFirmwareRequest
