@@ -121,7 +121,7 @@ Phase 1 is complete when:
   requirements above
 - In particular, your `DeviceCheckTask` is ready to be passed to the
   `submit()` method on an `ExecutorService`.
-- `executorservice-classroom-phase1` tests are passing
+- `Phase1Test` tests are passing
 
 ### Phase 2: Use your task iteratively
 
@@ -142,7 +142,7 @@ Return the total number of devices found and checked.
 Phase 2 is complete when:
 - You have implemented `checkDevicesIteratively`, making use of
   `DeviceCheckTask`
-- `executorservice-classroom-phase2` tests are passing
+- `Phase2Test` tests are passing
 
 ### Phase 3: Use your task concurrently
 
@@ -183,11 +183,6 @@ this test runs concurrently, the line may appear anywhere in the log.
 Add the average times your team observed for the iterative and concurrent
 implementations of DeviceChecker to the table in the digest.
 
-**One more thing:** Implement the `shutdown()` method on `DeviceChecker`,
-so that subsequent calls to `isShutdown()` return false. Think if you can
-use your thread pool instead of adding a new boolean state variable to
-the class....
-
 **GOAL:** Implement the concurrent version of the device-checking
           logic
 
@@ -196,9 +191,7 @@ Phase 3 is complete when:
   `DeviceCheckTask`
 - You have discussed the two questions above with your teammates, and have
   included your team's experimental results in the table in the digest.
-- You have implemented `DeviceChecker`'s `shutdown()` and `isShutdown()`
-  methods
-- `executorservice-classroom-phase3` tests are passing
+- `Phase3Test` tests are passing
 
 ### Extension: Phase 4: Submit the update requests
 
@@ -251,4 +244,4 @@ request firmware updates for each of the out-of-date devices.
 
 Phase 4 Extension is complete when:
 - `DeviceChecker.updateDevice()` is implemented
-- `executorservice-classroom-phase4` tests are passing
+- `Phase4Test` tests are passing
